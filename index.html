@@ -4,12 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="theme-color" content="#07060b" />
-  <meta name="description" content="imba runs coding agents on a machine you own. Start a spawn, watch every step, answer when it asks, run thirty at once, and review what comes back. In private alpha." />
+  <meta name="description" content="imba runs coding agents on a machine you own, and you drive them from any screen. Start a spawn, watch every step, approve its plan, run thirty at once, and review what comes back. In private alpha." />
   <title>imba — one desk, thirty agents</title>
+  <link rel="canonical" href="https://hr-hristov.github.io/imba-website/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="imba" />
+  <meta property="og:url" content="https://hr-hristov.github.io/imba-website/" />
+  <meta property="og:title" content="imba — one desk, thirty agents" />
+  <meta property="og:description" content="imba runs coding agents on a machine you own, and you drive them from any screen. Start a spawn, watch every step, approve its plan, and review what comes back. In private alpha." />
+  <meta property="og:image" content="https://hr-hristov.github.io/imba-website/imba-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="The imba story page: One desk. Thirty agents., beside a voxel operator at a command deck" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Crect width='8' height='8' fill='%2307060b'/%3E%3Cpath fill='%23ff5b2e' d='M3 1h2v1H3zM3 3h2v4H3z'/%3E%3C/svg%3E" />
-  <script type="module" crossorigin src="./assets/main-D_ojmBKI.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/alpha-BHfKC-KJ.js">
-  <link rel="stylesheet" crossorigin href="./assets/alpha-BYTGVt8K.css">
+  <script type="module" crossorigin src="./assets/main-CJAdpIB_.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/pixel-D5hYLSCm.js">
+  <link rel="modulepreload" crossorigin href="./assets/alpha-DK8uVy3-.js">
+  <link rel="stylesheet" crossorigin href="./assets/pixel-DteojukA.css">
 </head>
 <body data-view="hero">
   <canvas id="world" aria-hidden="true"></canvas>
@@ -24,7 +36,7 @@
       <span class="hud-count"><b data-count>30</b> <span class="hud-word">working</span></span>
       <span class="hud-rank" data-rank></span>
     </div>
-    <button class="film-link" data-film="ranks"><span class="play" aria-hidden="true"></span>Watch the app</button>
+    <button class="film-link" data-film="start"><span class="play" aria-hidden="true"></span>Watch the app</button>
   </header>
 
   <main>
@@ -32,11 +44,11 @@
       <div class="copy">
         <p class="kicker">Private alpha</p>
         <h1>One desk.<br><span>Thirty agents.</span></h1>
-        <p class="lede">imba runs coding agents on a machine you own. Every job is a spawn: one agent, one task, one repository. One list shows them all, and every result comes back to you.</p>
+        <p class="lede">imba runs coding agents on a machine you own. You drive them from anywhere, and every result comes back to you. Every job is a spawn: one agent, one task, one repository.</p>
         <ul class="points">
-          <li><b>Real code</b><span>A spawn works in your own checkout, on your own machine.</span></li>
-          <li><b>Every step</b><span>Its feed shows each command, file and question as it happens.</span></li>
-          <li><b>Your call</b><span>You approve its plan, read its changes and commit them.</span></li>
+          <li><b>On your machine</b><span>Spawns run there, in your real checkouts.</span></li>
+          <li><b>Any screen</b><span>A browser, the desktop app or your phone.</span></li>
+          <li><b>Lid closed</b><span>Close the laptop and the work goes on.</span></li>
         </ul>
         <div class="actions">
           <a class="button primary" href="#alpha">Ask to test it</a>
@@ -50,7 +62,7 @@
       <div class="copy">
         <p class="step"><b>01</b>Spawn</p>
         <h2>Give an agent<br><span>a job.</span></h2>
-        <p>Press N, say what needs doing and pick the repository. One agent starts on that one task, in your real checkout, and the spawns list gains its row.</p>
+        <p>Press N, say what needs doing and pick the repository. One agent starts on that one task, in your real checkout on your machine, and the spawns list gains its row.</p>
         <p class="keyline"><span class="keys" data-keys="spawn"></span><span>New spawn</span></p>
       </div>
     </section>
@@ -59,20 +71,20 @@
       <div class="copy">
         <p class="step"><b>02</b>Watch</p>
         <h2>See every<br><span>step.</span></h2>
-        <p>Its feed shows each thought, command and file edit as it happens. You can talk while it works: a word sent mid-turn changes where it goes next.</p>
+        <p>Its feed shows each thought, command and file edit as it happens, on whichever screen you have open. You can talk while it works: a word sent mid-turn changes where it goes next.</p>
         <ul class="lights" aria-label="Spawn lights"><li class="working">Working</li></ul>
         <p class="keyline"><span class="keys" data-keys="steer"></span><span>Steer</span></p>
       </div>
     </section>
 
-    <section class="chapter" data-chapter="3" id="answer">
+    <section class="chapter" data-chapter="3" id="plan">
       <div class="copy">
-        <p class="step"><b>03</b>Answer</p>
-        <h2>It asks.<br><span>You answer.</span></h2>
-        <p>A spawn stops when it needs you, and its light says why. Amber asks to run a command. Blue has written a plan and waits for your yes.</p>
-        <ul class="lights" aria-label="Spawn lights"><li class="asking">Asking</li><li class="plan">Plan waiting</li></ul>
+        <p class="step"><b>03</b>Plan</p>
+        <h2>Plan first.<br><span>Then go.</span></h2>
+        <p>Ask for a plan first, and the spawn writes one before it touches a file. Its light turns blue while the plan waits for you. Comment on any line to send it back, or approve it from your phone or the desk.</p>
+        <ul class="lights" aria-label="Spawn lights"><li class="plan">Plan waiting</li></ul>
         <div class="keygrid">
-          <p class="keyline"><span class="keys" data-keys="allow"></span><span>Allow</span></p>
+          <p class="keyline"><span class="keys" data-keys="planFirst"></span><span>Plan first</span></p>
           <p class="keyline"><span class="keys" data-keys="plan"></span><span>Approve the plan</span></p>
         </div>
       </div>
@@ -82,8 +94,8 @@
       <div class="copy">
         <p class="step"><b>04</b>Many</p>
         <h2>Then run<br><span>thirty.</span></h2>
-        <p>Start another, and another. Every spawn keeps its own light on the list, and the list ranks how many are at work.</p>
-        <ul class="lights" aria-label="Spawn lights"><li class="working">Working</li><li class="asking">Asking</li><li class="plan">Plan</li><li class="done">Done</li></ul>
+        <p>Start another, and another. The list shows what each one is doing, and ranks how many are at work.</p>
+        <ul class="lights" aria-label="Spawn lights"><li class="working">Working</li><li class="plan">Plan</li><li class="done">Idle</li></ul>
         <p class="keyline"><span class="keys" data-keys="spawn"></span><span>New spawn</span></p>
         <p class="keyline minor"><span class="keys" data-keys="loop"></span><span>Loop</span><span class="keys" data-keys="orchestrate"></span><span>Orchestration</span></p>
         <ol class="ladder" data-ladder aria-label="The rank for each number of working agents"></ol>
@@ -94,7 +106,7 @@
       <div class="copy">
         <p class="step"><b>05</b>Review</p>
         <h2>It all comes<br><span>back to you.</span></h2>
-        <p>When a light turns pink, the job is done. Read what it changed, file by file, then commit it or send it round again.</p>
+        <p>When a spawn's turn ends, it stops and waits for you. Read what it changed, file by file, then commit it or send it round again.</p>
         <div class="keygrid">
           <p class="keyline"><span class="keys" data-keys="changes"></span><span>Changes</span></p>
           <p class="keyline"><span class="keys" data-keys="graph"></span><span>Commit graph</span></p>
@@ -104,22 +116,57 @@
     </section>
 
     <section class="chapter outro" data-chapter="6" id="films">
+      <section class="remote" id="remote" aria-labelledby="remote-title">
+        <div class="remote-words">
+          <p class="kicker">Everything is remote</p>
+          <h2 id="remote-title">It runs there.<br><span>You are anywhere.</span></h2>
+          <p>Nothing runs on the screen in your hand. The agents, their checkouts, terminals, browsers and test phones all live on your machine. Every screen you own opens onto it.</p>
+        </div>
+        <div class="reach">
+          <div class="machine">
+            <p class="machine-head"><svg class="tower" viewBox="0 0 9 11" aria-hidden="true"><path d="M0 0h9v1H0zM0 10h9v1H0zM0 1h1v9H0zM8 1h1v9H8zM2 3h5v1H2zM2 5h5v1H2z"/><path class="on" d="M6 8h1v1H6z"/></svg><b>Your machine</b><small><i class="light working" aria-hidden="true"></i>30 working</small></p>
+            <ul class="runs" aria-label="What runs on your machine">
+              <li><b>Spawns</b><span>Each in its own terminal session. Close your laptop and they keep going.</span></li>
+              <li><b>Shells</b><span>A real terminal in the spawn's folder.</span></li>
+              <li><b>Pages it built</b><span>Served on the machine, opened on your phone.</span></li>
+              <li><b>Its browser</b><span>Works while nobody watches. Take the wheel from anywhere.</span></li>
+              <li><b>Test phones</b><span>An Android emulator or iOS simulator, mirrored to your screen.</span></li>
+              <li><b>Machine monitor</b><span>Its processor, memory and disks, live.</span></li>
+            </ul>
+          </div>
+          <div class="link"><i></i><i></i><i></i><span>One address</span></div>
+          <div>
+            <ul class="screens" aria-label="The screens that reach it">
+              <li><svg viewBox="0 0 13 8" aria-hidden="true"><path d="M2 0h9v1H2zM2 5h9v1H2zM2 1h1v4H2zM10 1h1v4h-1zM0 7h13v1H0z"/></svg>Browser</li>
+              <li><svg viewBox="0 0 13 10" aria-hidden="true"><path d="M0 0h13v1H0zM0 6h13v1H0zM0 1h1v5H0zM12 1h1v5h-1zM6 7h1v2H6zM3 9h7v1H3z"/></svg>Desktop app</li>
+              <li><svg viewBox="0 0 7 11" aria-hidden="true"><path d="M0 0h7v1H0zM0 10h7v1H0zM0 1h1v9H0zM6 1h1v9H6zM3 8h1v1H3z"/></svg>Phone app</li>
+            </ul>
+            <p class="buzz"><i class="light done" aria-hidden="true"></i>A long job tells your phone when it ends.</p>
+          </div>
+        </div>
+      </section>
       <div class="outro-inner">
         <p class="kicker">Recorded in imba</p>
         <h2>The real thing.</h2>
         <div class="films">
-          <button class="film" data-film="ranks">
-            <img src="./assets/imba-ranks-Ck0J5kg-.png" alt="The imba spawns list with the rank BEYOND GODLIKE over twenty working agents" loading="lazy" width="960" height="600" />
-            <span class="film-meta"><span class="play" aria-hidden="true"></span><b>The rank climbing as more agents work</b><small>0:51</small></span>
+          <button class="film film-lead" data-film="start">
+            <img src="./assets/start-to-commit-4IO0QmII.png" alt="A spawn's plan in imba to fix a checkout total, waiting to be approved" loading="lazy" width="1000" height="640" />
+            <span class="film-meta"><span class="play" aria-hidden="true"></span><b>One spawn, start to commit</b><small data-length></small></span>
           </button>
-          <button class="film" data-film="handover">
-            <img src="./assets/imba-workspace-zYIrC0q4.png" alt="The Hand over to Codex sheet in imba, with model and effort chosen from the keyboard" loading="lazy" width="960" height="600" />
-            <span class="film-meta"><span class="play" aria-hidden="true"></span><b>A decision taken without the mouse</b><small>0:44</small></span>
-          </button>
+          <div class="films-side">
+            <button class="film" data-film="many">
+              <img src="./assets/many-at-once-BwIGYvQG.png" alt="The imba Ultrafocus screen: seven spawns waiting, and the rank of the twenty-two at work" loading="lazy" width="1000" height="640" />
+              <span class="film-meta"><span class="play" aria-hidden="true"></span><b>Many at once</b><small data-length></small></span>
+            </button>
+            <button class="film" data-film="proof">
+              <img src="./assets/mark-up-proof-Bs_ZuFTa.png" alt="A picture of a refund email in imba, its amount boxed and a note written on it" loading="lazy" width="1000" height="640" />
+              <span class="film-meta"><span class="play" aria-hidden="true"></span><b>Proof you can mark up</b><small data-length></small></span>
+            </button>
+          </div>
         </div>
         <ul class="facts">
           <li><b>Spawns</b><span>One agent, one task, one repository.</span></li>
-          <li><b>Lights</b><span>Working, asking, a plan waiting or done, on every row.</span></li>
+          <li><b>States</b><span>Working, a plan waiting or idle, on every row.</span></li>
           <li><b>Loops</b><span>A builder and a checker, round after round, until proven.</span></li>
           <li><b>Orchestrations</b><span>A run graph of sub-sessions, approved first.</span></li>
           <li><b>Keys</b><span>Every control in the app has one.</span></li>
@@ -132,14 +179,18 @@
           <h2 id="alpha-title">Not out yet.<br><span>Ask to test it.</span></h2>
           <p>imba is not released. It changes most days, and parts of it still break. A few people run it now on real work and say what went wrong.</p>
           <div class="actions"><a class="button primary" href="mailto:hristo.hristov@theoremus.com?subject=imba%20alpha&amp;body=Name%3A%20%0AClaude%20Code%20or%20Codex%3A%20%0AWhat%20I%20would%20use%20it%20for%3A%20%0A">Ask to test it</a></div>
-          <p class="mail"><span class="mail-address">hristo.hristov@theoremus.com</span><button class="mail-copy" type="button" data-copy="hristo.hristov@theoremus.com">Copy</button></p>
+          <p class="mail"><span class="mail-address">hristo.hristov@theoremus.com</span><button class="mail-copy" type="button" data-copy="hristo.hristov@theoremus.com">Copy</button><span class="quiet" role="status" data-copy-status></span></p>
         </div>
         <ul class="needs" aria-label="What a tester needs">
-          <li><b>Your machine</b><span>Spawns run on a computer you own.</span></li>
+          <li><b>Your machine</b><span>A Mac or a Linux computer you own, left on.</span></li>
           <li><b>An agent</b><span>Claude Code or Codex, signed in.</span></li>
           <li><b>Git and tmux</b><span>On that computer.</span></li>
           <li><b>Your notes</b><span>What broke, and what you expected.</span></li>
         </ul>
+        <dl class="answers">
+          <div><dt>Your code</dt><dd>Stays on your computer. The agent sends what it reads to Anthropic or OpenAI, on your own account. Nothing comes back to us.</dd></div>
+          <div><dt>Made by</dt><dd>Hristo Hristov.</dd></div>
+        </dl>
       </section>
       <footer class="foot">
         <a class="brand" href="#top" aria-label="Back to the top" data-logo></a>
@@ -153,6 +204,7 @@
   <dialog id="film-dialog" aria-labelledby="film-title">
     <div class="film-head"><span id="film-title"></span><button id="close-film">Close</button></div>
     <video id="film" controls playsinline preload="none"></video>
+    <ol class="film-steps" id="film-steps" aria-label="Steps"></ol>
     <p id="film-note"></p>
   </dialog>
 </body>
